@@ -1,0 +1,576 @@
+@font-face {
+  font-family: "BROTHER-Bold";
+  src: url(BROTHER-Bold.ttf);
+}
+
+.titan-one-regular {
+  font-family: "Titan One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .home {
+    background: url(homepage.jpg) no-repeat center/cover;
+    position: relative;
+    height: 100vh;
+    
+    width: 100%;
+    font-family: "Titan One";
+    font-weight: 100;
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .header nav ul {
+    text-align: right;
+    display: list-item;
+    /* Deixa os itens na horizontal */
+    margin-right: 2%;
+    margin-top: 0;
+    margin-bottom: 1%;
+    /* Espaçamento entre os itens */
+    list-style: none;
+    /* Remove os marcadores de lista */
+  }
+
+  .header nav ul a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #000000;
+    /* Cor do texto */
+    font-size: 22px;
+    /* Tamanho da fonte */
+    transition: all 0.3s ease;
+    /* Suaviza a transição */
+    position: relative;
+    /* Necessário para o efeito do hover */
+  }
+
+  .header nav ul a::after {
+    content: "";
+    /* Cria o efeito decorativo */
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fc8904;
+    /* Cor da linha decorativa */
+    transition: width 0.3s ease;
+    /* Suaviza a expansão */
+    margin-left: 80%;
+    /* Centraliza a linha */
+  }
+  
+  .header nav ul a:hover::after,
+  .header nav ul a.active::after {
+    width: 20%;
+    /* A linha decorativa cresce até 100% da largura do link */
+  }
+    
+  .logo {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  .textosobre {
+    max-width: 100%;
+    margin: 4%;
+    height: auto;
+    font-family: "Titan One";
+    text-shadow: #000000 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left bottom;
+    text-align: left;
+    color: #ffff;
+  }
+  
+  .sobre p {
+    max-width: 100%;
+    padding-left: 1%;
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .sobre-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 95%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .textosobre {
+    font-family: "Titan One";
+    font-size: 12px;
+    flex: 1;
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    margin: 5%;
+    color: #ffff;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px #f562e1;
+    transition: 0.3s;
+    box-sizing: border-box;
+    /* Inclui margens e bordas na largura total */
+    width: 30%;
+    /* Define um limite máximo de largura */
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza horizontalmente */
+    position: relative;
+    /* Mantém flexibilidade para ajustes */
+  }
+
+  .section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.footer {
+  width: 100%;
+  background-color: #121212;
+  /* Cor de fundo do rodapé */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.footer-link {
+  text-decoration: none;
+  background-color: #121212;
+  /* Cor de fundo do rodapé */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  /* Tamanho do texto */
+}
+}
+
+@media (min-width: 769px) {
+  .home {
+    font-weight: 100;
+    font-family: "Titan One";
+    margin: 0;
+    background: url(homis3.jpg)no-repeat center ;
+    width: 100vw;
+    height: 1050px;
+    overflow-x: hidden;
+    background-size: cover;
+    transition: background-color 1s ease, opacity 1s ease;
+    color: #d1d1d1;
+    text-align: center;
+  }
+  .logo {
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+.header nav ul {
+  text-align: right;
+  display: list-item;
+  /* Deixa os itens na horizontal */
+  margin-right: 2%;
+  margin-top: 0;
+  margin-bottom: 1%;
+  /* Espaçamento entre os itens */
+  list-style: none;
+  /* Remove os marcadores de lista */
+}
+
+.header nav ul a {
+  text-decoration: none;
+  /* Remove o sublinhado dos links */
+  color: #000000;
+  /* Cor do texto */
+  font-size: 2vw;
+  /* Tamanho da fonte */
+  transition: all 0.3s ease;
+  /* Suaviza a transição */
+  position: relative;
+  /* Necessário para o efeito do hover */
+}
+
+.header nav ul a::after {
+  content: "";
+  /* Cria o efeito decorativo */
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fc8904;
+  /* Cor da linha decorativa */
+  transition: width 0.3s ease;
+  /* Suaviza a expansão */
+  margin-left: 93%;
+  /* Centraliza a linha */
+}
+
+.header nav ul a:hover::after,
+.header nav ul a.active::after {
+  width: 7%;
+  /* A linha decorativa cresce até 100% da largura do link */
+}
+  
+  .textosobre {
+    background: url(galeria9Invertida.jpg) center;
+    max-width: 100%;
+    margin: 4%;
+    height: 775px;
+    font-family: "Titan One";
+    text-shadow: #000000 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left bottom;
+    text-align: left;
+    background-size: cover;
+    color: #ffff;
+  }
+  
+  .sobre p {
+    max-width: 40%;
+    padding-left: 1%;
+    font-size: 20px;
+  }
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px #f562e1;
+  transition: 0.3s;
+  box-sizing: border-box;
+  /* Inclui margens e bordas na largura total */
+  width: 20%;
+  /* Define um limite máximo de largura */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centraliza horizontalmente */
+  position: relative;
+  /* Mantém flexibilidade para ajustes */
+}
+
+.section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #121212;
+  /* Cor de fundo do rodapé */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 20px;
+  /* Espaçamento interno */
+  font-size: 14px;
+  /* Tamanho do texto */
+}
+
+.footer-link {
+  text-decoration: none;
+  background-color: #121212;
+  /* Cor de fundo do rodapé */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 20px;
+  /* Espaçamento interno */
+  font-size: 14px;
+  /* Tamanho do texto */
+}
+}
+
+body {
+  overflow-x: hidden;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  }
+
+body.scrolled {
+  overflow-x: hidden;
+  transition: 1s ease, opacity 1s ease;
+  background-blend-mode: darken;
+  background-color: #000000;
+  background-size: cover;
+  font-family: "Titan One", serif;
+  color: #ffff;
+  opacity: 0.9;
+}
+
+.bold-text {
+  font-weight: bolder;
+  color: #fc8904;
+}
+
+h1 {
+  color: #fc8904;
+  font-family: "BROTHER-Bold", serif;
+  text-align: center;
+}
+
+h2 {
+  color: #ffff;
+  font-family: "BROTHER-Bold", serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #fc8904;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header nav ul a:hover,
+.header nav ul a.active {
+  color: #fc8904;
+  /* Altera a cor do texto ao passar o mouse */
+  cursor: pointer;
+}
+
+.conteiner {
+  display: flex;
+  flex-wrap:wrap-reverse;
+  /* Permite que os cards quebrem de linha se necessário */
+  justify-content: center;
+  /* Centraliza os cards horizontalmente */
+  /* Centraliza os cards verticalmente */
+  gap: 30px;
+  max-width: 100%;
+  /* Garante que ocupe toda a largura disponível */
+  padding: 10px;
+  margin: 0 auto;
+  /* Centraliza o contêiner na página */
+}
+
+.card img {
+  width: 100%;
+  /* Mantém a proporção da imagem */
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+  object-fit: fill;
+  /* Ajusta a imagem para caber no card sem distorção */
+}
+
+.card img.hover {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+  transform: translateY(-6px);
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.card:hover img.default {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card:hover img.hover {
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in;
+}
+
+.card:hover p {
+  color: #fc8904;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+.card:hover h4 {
+  color: #fc8904;
+  transition: ease-in 0.3s;
+}
+
+.card h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.butao {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  margin-top: auto;
+  position: relative;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, #fcc204, #ff8800);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 7;
+  transition-duration: 0.3s;
+  position: relative;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.carrossel {
+  display: flex;
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel-container {
+  display: flex;
+  height: 50vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-container img {
+  margin: 0;
+  object-fit: contain; /* Mantém a proporção da imagem */
+  scroll-snap-align: center;
+  flex-shrink: 0; /* Impede que as imagens encolham */
+  display: block; /* Remove espaços indesejados abaixo das imagens */
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+  width: 100vw;
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+}
+
+
+.carrossel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicadores {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.indicadores .ponto {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicadores .ponto.ativo {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}
