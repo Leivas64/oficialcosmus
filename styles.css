@@ -11,7 +11,7 @@
 
 @media (max-width: 768px) {
   .home {
-    background: url(homepage.jpg) no-repeat center/cover;
+    background: url(public/images/homepage.jpg) no-repeat center/cover;
     position: relative;
     height: 100vh;
     
@@ -174,7 +174,7 @@
     font-weight: 100;
     font-family: "Titan One";
     margin: 0;
-    background: url(homis3.jpg)no-repeat center ;
+    background: url(public/images/homis3.jpg)no-repeat center ;
     width: 100vw;
     height: 1050px;
     overflow-x: hidden;
@@ -237,7 +237,7 @@
 }
   
   .textosobre {
-    background: url(galeria9Invertida.jpg) center;
+    background: url(public/images/galeria9Invertida.jpg) center;
     max-width: 100%;
     margin: 4%;
     height: 775px;
