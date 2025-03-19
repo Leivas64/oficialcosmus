@@ -17,7 +17,6 @@
     background: url(public/images/homepage.jpg) no-repeat center/cover;
     position: relative;
     height: 100vh;
-    overflow-x: hidden;
     width: 100%;
     font-family: "Titan One";
     font-weight: 100;
@@ -28,7 +27,6 @@
   .header nav ul {
     text-align: right;
     display: list-item;
-    overflow-x: hidden;
     margin-right: 2%;
     margin-top: 0;
     margin-bottom: 1%;
@@ -37,7 +35,6 @@
 
   .header nav ul a {
     text-decoration: none;
-    overflow-x: hidden;
     color: #000000;
     font-size: 22px;
     transition: all 0.3s ease;
@@ -50,7 +47,6 @@
     width: 0;
     height: 2px;
     background: #fc8904;
-    overflow-x: hidden;
     transition: width 0.3s ease;
     margin-left: 80%;
   }
@@ -58,7 +54,6 @@
   .header nav ul a:hover::after,
   .header nav ul a.active::after {
     width: 20%;
-    overflow-x: hidden;
   }
     
   .logo {
@@ -72,7 +67,6 @@
   
   .textosobre {
     max-width: 100%;
-    overflow-x: hidden;
     margin: 4%;
     height: auto;
     font-family: "Titan One";
@@ -85,7 +79,6 @@
   }
   
   .sobre p {
-    overflow-x: hidden;
     max-width: 100%;
     padding-left: 1%;
     font-size: 12px;
@@ -93,7 +86,6 @@
   }
 
   .sobre-container {
-    overflow-x: hidden;
     text-align: center;
     display: flex;
     align-items: center;
@@ -106,7 +98,6 @@
 
   .textosobre {
     font-family: "Titan One";
-    overflow-x: hidden;
     font-size: 12px;
     flex: 1;
     display: flex;
@@ -124,7 +115,6 @@
     box-shadow: 0 2px 4px #f562e1;
     transition: 0.3s;
     box-sizing: border-box;
-    overflow-x: hidden;
     width: 30%;
     padding: 0;
     text-align: center;
@@ -143,7 +133,6 @@
 .footer {
   width: 100%;
   background-color: #121212;
-  overflow-x: hidden;
   color: white; 
   text-align: center;
   padding: 5px;
@@ -153,7 +142,6 @@
 .footer-link {
   text-decoration: none;
   background-color: #121212;
-  overflow-x: hidden;
   color: white; 
   text-align: center;
   padding: 5px;
@@ -456,7 +444,7 @@ a {
 .carrossel {
   display: flex;
   position: relative;
-  width: auto;
+  width: 100vw;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -465,6 +453,7 @@ a {
 .carrossel-container {
   display: flex;
   height: 50vh;
+  width: 100vw;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -473,8 +462,9 @@ a {
   scroll-snap-align: center;
   flex-shrink: 0;
   display: block;
-  max-width: 100%;
+  max-height:60vh;
   width: 100vw;
+  object-fit: contain;
   height: auto;
   border-radius: 10px;
 }
