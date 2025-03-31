@@ -12,6 +12,9 @@ const targetSection = document.getElementById('musicas');
 function rudder() {
     window.open('https://distrokid.com/hyperfollow/cosmus3/rudder', '_blank');
 }
+function show1() {
+    window.open('https://byma.com.br/event/67ea523f2661dd000c95b9e6', '_blank');
+}
 function dance() {
     window.open('https://offstep.link/622550476683')
 }
