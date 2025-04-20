@@ -12,6 +12,9 @@ const targetSection = document.getElementById('musicas');
 function rudder() {
     window.open('https://distrokid.com/hyperfollow/cosmus3/rudder', '_blank');
 }
+function pasp() {
+    window.open('https://distrokid.com/hyperfollow/cosmus3/pillowtalk--slumber-party/', '_blank');
+}
 function show1() {
     window.open('https://byma.com.br/event/67ea523f2661dd000c95b9e6', '_blank');
 }

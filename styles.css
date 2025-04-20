@@ -325,6 +325,11 @@ a {
   margin: 0 auto;
 }
 
+.content {
+  width: 100%;
+  height: auto;
+}
+
 .card img {
   width: 100%;
   display: block;
