@@ -16,7 +16,7 @@ function pasp() {
     window.open('https://distrokid.com/hyperfollow/cosmus3/pillowtalk--slumber-party/', '_blank');
 }
 function show1() {
-    window.open('https://byma.com.br/event/67ea523f2661dd000c95b9e6', '_blank');
+    window.open('https://meaple.com.br/brasuca-multicultural/indienight', '_blank');
 }
 function dance() {
     window.open('https://offstep.link/622550476683')
