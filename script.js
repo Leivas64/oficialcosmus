@@ -16,7 +16,7 @@ function pasp() {
     window.open('https://distrokid.com/hyperfollow/cosmus3/pillowtalk--slumber-party/', '_blank');
 }
 function show1() {
-    window.open('https://hoppin.com.br/citrus', '_blank');
+    window.open('https://tollosafestival.com/artistas/cosmus', '_blank');
 }
 function dance() {
     window.open('https://offstep.link/622550476683')
